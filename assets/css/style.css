@@ -5,8 +5,9 @@
 }
 
 body {
-    background: url(../images/old-paper-background-942.jpg) no-repeat center ;
+    background: url(../images/Abstract_gold_background.jpg) no-repeat center fixed;
     background-size: cover;
+    /*background-color: rgb(231, 177, 74);*/
 }
 
 .full-row {
@@ -16,41 +17,52 @@ body {
 
 .round {
     border-radius: 1rem;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, .95);
 }
 
-/* .opaque-overlay {
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background-color: rgba(219, 219, 219, 0.1);    
-} */
+.text-gold {
+    color: #FFBF00;
+}
+
+.text-black {
+    color: #000;
+}
+
+.bg-gold {
+    background-color: #ffbf00;
+}
+
+.bg-black {
+    background: rgba(0, 0, 0, .95);
+}
 
 /* --- Header and nav --- */
 .header-brand {
     height: 100px;
 }
 
+.bg-header {
+    background: rgba(0, 0, 0, 0.95);
+    background: linear-gradient(176deg, rgba(0, 0, 0, 1) 45%, rgba(255, 208, 0, 1) 50%, rgba(0, 0, 0, .9) 55%); */
+}
+
 #home {
     z-index: 2;
 }
+
 .divider {
     padding: 0;
     height: 17px;
 }
 
-.bg-contact-row {
-    background-color: #5d656d;
-}
-
 .text-shadow {
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 1),
+                 3px 3px 3px rgb(0, 0, 0);
 }
 
 .nav-link {
-    color: #FFC107 !important;
+    color: #FFBF00 !important;
+    font-w
 }
 
 .nav-link:hover {
@@ -101,13 +113,7 @@ body {
     position: relative;
 }
 
-.text-black {
-    color: #000;
-}
 
-.bg-black {
-    background: rgba(0, 0, 0, .8);
-}
 
 
 .book-cover {
@@ -126,13 +132,23 @@ body {
 .round-left {
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, .9);
 }
 
 .round-right {
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, .9);
+}
+
+.btn-outline-warning {
+    color: #FFBF00 !important;
+    border-color: #FFBF00 !important;
+}
+
+.btn-outline-warning:hover {
+    color: #000 !important;
+    background: #FFBF00 !important;
 }
 
 .message-container {
@@ -144,14 +160,14 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding: 5px 0;
-    border: 1px solid #FFC107;
+    border: 1px solid #FFBF00;
     border-radius: 0.5rem;
     background-color: rgb(21, 83, 31);
 }
 
 .form-control {
     background: transparent;
-    border-color: #FFC107;
+    border-color: #FFBF00;
 }
 
 .form-control::placeholder {
