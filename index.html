@@ -8,7 +8,7 @@
         <!-- CSS -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
         <link rel="stylesheet" href="./assets/css/style.css">
-
+        <!-- JS -->
         <script src="https://kit.fontawesome.com/b6c120cd7f.js" crossorigin="anonymous"></script>
         <title>ART Empire Publishing</title>
     </head>
@@ -19,29 +19,29 @@
         
       
             <!-- Brand Logo Header -->
-            <div class="bg-blue-pic">
+            <div class="bg-blue">
                 <div class="row header-brand  w-100 mx-0" id="home">
                     <div class="col-sm-12 my-auto">
-                        <h1 class="text-white text-center text-shadow text-uppercase">Art Empire Publishing</h1>
+                        <h1 class="text-blue text-center text-shadow text-uppercase">Art Empire Publishing</h1>
                     </div>
                 </div>
                 <div class="row  w-100 mx-0">
                     <div class="col divider">
-                        <hr class="bg-white">
+                        <hr class="bg-lightblue">
                     </div>
                 </div>
             </div>
 
             <!-- Navigation Bar -->
-            <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-blue w-100 mx-0 "  id="nav">
+            <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-blue-reverse w-100 py-0 "  id="nav">
                 <!-- <a class="navbar-brand" href="#">ART Empire Publishing</a> -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav mx-auto">
-                        <li class="nav-item nav-divider active">
-                            <a class="nav-link text-shadow" href="#">Home<span class="sr-only">(current)</span></a>
+                        <li class="nav-item nav-divider">
+                            <a class="selected nav-link text-shadow" href="#">Home<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item nav-divider text-shadow" id="contact-button">
                             <a class="nav-link" href="#">Show Contacts</a>
@@ -52,7 +52,7 @@
                         <li class="nav-item nav-divider text-shadow">
                             <a class="nav-link" href="#coming-soon">Coming Soon</a>
                         </li>
-                        <li class="nav-item text-shadow">
+                        <li class="nav-item nav-divider text-shadow">
                             <a class="nav-link" href="#contact">Message Us</a>
                         </li>
                     </ul>
@@ -64,10 +64,9 @@
         
         <div class="container-fluid">
             
-            <div class="row bg-blue text-white hide" id="contact-row">
-                <div class="col text-center my-1">
-                    <hr class="bg-white m-0">
-                    <span><i class="fas fa-envelope"></i><span class="email">info@artempirepublishing.com</span> |</span>  
+            <div class="row bg-blue hide" id="contact-row">
+                <div class="col text-blue text-center my-1">
+                    <span><i class="fas fa-envelope"></i><span class="email"><a href="mailto:artempire.publishing@gmail.com">artempire.publishing@gmail.com</a></span> |</span>  
                     <span class="phone"><i class="fas fa-phone"></i> <span class="phone">0123548784</span></span>
                 </div>
             </div>
@@ -80,9 +79,9 @@
             
             <div class="row" >
                 <div class="col-12 mt-4 round mx-auto">
-                    <hr class="bg-white">
-                    <h4 class="text-uppercase text-white text-shadow ml-5"><i class="fas fa-book-open pr-2"></i>Our books</h4>
-                    <hr class="bg-white">
+                    <hr class="bg-lightblue">
+                    <h4 class="text-blue text-uppercase text-shadow ml-5"><i class="fas fa-book-open pr-2"></i>Our books</h4>
+                    <hr class="bg-lightblue">
                 </div>
             </div>
             
@@ -140,38 +139,60 @@
             <div class="spacer"></div>
             <div class="row">     
                 <div class="col-12 mx-auto mt-5 round">
-                    <hr class="bg-white">
-                    <h4 class="text-uppercase text-white text-shadow mt-3 ml-5"><i class="fas fa-book pr-2"></i>Books Coming Soon</h4>
-                    <hr class="bg-white">
+                    <hr class="bg-lightblue">
+                    <h4 class="text-blue text-uppercase text-shadow mt-3 ml-5"><i class="fas fa-book pr-2"></i>Books Coming Soon</h4>
+                    <hr class="bg-lightblue">
                 </div>
                     
-                <div class="row mx-auto mt-5 w-75">
-                    <div class="col-sm-12 col-md-3 pt-2">
-                        <img src="./assets/images/Square-Softcover-Book-Mockup-8_5x8_5-v1.jpg" class="img-fluid book-cover" alt="Book cover image">
+                <div class="row mx-auto mt-5 w-90">
+                    <div class="col-sm-12 col-md-4 pt-2 pr-4">
+                        <a href="./assets/images/comming-soon/at_the_zoo.jpg" target="_blank">
+                            <img src="./assets/images/comming-soon/at_the_zoo.jpg" class="img-fluid book-cover" alt="At the zoo">
+                        </a>
                     </div>
-                    <div class="col-sm-12 col-md-3 pt-2">
-                        <img src="./assets/images/Square-Softcover-Book-Mockup-8_5x8_5-v1.jpg" class="img-fluid book-cover" alt="Book cover image">
+                    <div class="col-sm-12 col-md-4 pt-2 pr-4">
+                        <a href="./assets/images/comming-soon/farm.jpg" target="_blank">
+                            <img src="./assets/images/comming-soon/farm.jpg" class="img-fluid book-cover" alt="Farm">
+                        </a>    
                     </div>
-                    <div class="col-sm-12 col-md-3 pt-2">
-                        <img src="./assets/images/Square-Softcover-Book-Mockup-8_5x8_5-v1.jpg" class="img-fluid book-cover" alt="Book cover image">
-                    </div>
-                    <div class="col-sm-12 col-md-3 pt-2">
-                        <img src="./assets/images/Square-Softcover-Book-Mockup-8_5x8_5-v1.jpg" class="img-fluid book-cover" alt="Book cover image">
+                    <div class="col-sm-12 col-md-4 pt-2 pr-4">
+                        <a href="./assets/images/comming-soon/find_10_hidden_objects.jpg" target="_blank">
+                            <img src="./assets/images/comming-soon/find_10_hidden_objects.jpg" class="img-fluid book-cover" alt="Find 10 hidden objects">
+                        </a>
                     </div>
                 </div>
+                
+             
+             
+                <div class="row mx-auto mt-5 w-90">
+                    <div class="col-sm-12 col-md-4 pt-2 pr-4 pr-4">
+                        <a href="./assets/images/comming-soon/my_village.jpg" target="_blank">
+                        <img src="./assets/images/comming-soon/my_village.jpg" class="img-fluid book-cover" alt="My village">
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-md-4 pt-2 pr-4 pr-4">
+                        <a href="./assets/images/comming-soon/numbers.jpg" target="_blank">
+                        <img src="./assets/images/comming-soon/numbers.jpg" class="img-fluid book-cover" alt="Numbers">
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-md-4 pt-2 pr-4 pr-4">
+                        <a href="./assets/images/comming-soon/professions.jpg" target="_blank">
+                        <img src="./assets/images/comming-soon/professions.jpg" class="img-fluid book-cover" alt="professions">
+                        </a>
+                    </div>
+                   
+                </div>
 
-                <div class="row mx-auto mt-3 mb-5 w-75">
-                    <div class="col-sm-12 col-md-3 pt-2">
-                        <img src="./assets/images/Square-Softcover-Book-Mockup-8_5x8_5-v1.jpg" class="img-fluid book-cover" alt="Book cover image">
+                <div class="row mx-auto mt-5 mb-5 w-90">
+                    <div class="col-sm-12 col-md-4 pt-2 pr-4">
+                        <a href="./assets/images/comming-soon/rhymes.jpg" target="_blank">
+                        <img src="./assets/images/comming-soon/rhymes.jpg" class="img-fluid book-cover" alt="rhymes">
+                        </a>
                     </div>
-                    <div class="col-sm-12 col-md-3 pt-2">
-                        <img src="./assets/images/Square-Softcover-Book-Mockup-8_5x8_5-v1.jpg" class="img-fluid book-cover" alt="Book cover image">
-                    </div>
-                    <div class="col-sm-12 col-md-3 pt-2">
-                        <img src="./assets/images/Square-Softcover-Book-Mockup-8_5x8_5-v1.jpg" class="img-fluid book-cover" alt="Book cover image">
-                    </div>
-                    <div class="col-sm-12 col-md-3 pt-2">
-                        <img src="./assets/images/Square-Softcover-Book-Mockup-8_5x8_5-v1.jpg" class="img-fluid book-cover" alt="Book cover image">
+                    <div class="col-sm-12 col-md-4 pt-2 pr-4">
+                        <a href="./assets/images/comming-soon/work_machines.jpg" target="_blank">
+                        <img src="./assets/images/comming-soon/work_machines.jpg" class="img-fluid book-cover" alt="Workmachines">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -204,13 +225,13 @@
         <!-- Contact us -->
         <div class="container-fluid pb-3"  id="contact">
             <div class="row mx-5">
-                <div class="row text-white">
-                    <div class="col-sm-12 col-md-6 py-5 round-left">
-                        <hr class="bg-white">
-                        <h3 class="text-center text-uppercase text-shadow"><i class="fas fa-envelope-open-text pr-2"></i>Contact Us</h3>
-                        <hr class="bg-white">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 py-5 contact-us">
+                        <hr class="bg-lightblue">
+                        <h3 class="text-blue text-center text-uppercase text-shadow"><i class="fas fa-envelope-open-text pr-2"></i>Contact Us</h3>
+                        <hr class="bg-lightblue">
                         <div id="message-container"></div>
-                        <form class="mt-5">
+                        <form class="mt-5 text-blue">
                             <div class="form-group">
                                 <label for="name">Name: <span class="text-danger">*</span></label>
                                 <input class="form-control" type="text" name="name" id="name" placeholder="Enter Your Name">
@@ -233,14 +254,14 @@
                         </form>
                     </div>
 
-                    <div class="col-sm-12 col-md-6 py-5 pl-3 round-right" >
-                        <hr class="bg-white">
-                        <h3 class="text-center text-shadow text-uppercase"><i class="fas fa-child pr-2"></i>Books and children</h3>
-                        <hr class="bg-white">
-                        <p class="text-justify">
+                    <div class="col-sm-12 col-md-6 py-5 pl-3 contact-us" >
+                        <hr class="bg-lightblue">
+                        <h3 class="text-blue text-center text-shadow text-uppercase"><i class="fas fa-child pr-2"></i>Books and children</h3>
+                        <hr class="bg-lightblue">
+                        <p class="text-justify text-blue">
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit similique, asperiores sed eius blanditiis corporis veritatis facilis nemo voluptatum deserunt voluptate laborum, doloribus magni natus! Reiciendis asperiores laboriosam accusantium earum, a consequuntur sequi incidunt similique debitis doloribus tenetur ea at. Odio, blanditiis illo itaque fugiat laboriosam excepturi velit molestiae quisquam rerum vero. Ut, facere quo, architecto fuga cumque reiciendis quibusdam dolores earum ab dolor blanditiis ipsa atque voluptas mollitia maxime cum reprehenderit facilis adipisci ex omnis. Non fugiat, nemo aspernatur asperiores, tenetur aliquid ipsum nam architecto quo incidunt quod ab optio cumque veritatis perspiciatis explicabo fuga officiis ex modi, rem similique perferendis! Ratione maiores quas hic minus animi rerum, eum illo, perferendis quod magnam autem.
                         </p>
-                        <hr class="bg-white">
+                        <hr class="bg-lightblue">
                     </div>
                 </div>
             </div>
@@ -255,7 +276,7 @@
                     <span class="text-white"><small>Copyright 2020 &copy; ART Empire Publishing</small></span>
                 </div>
                 <div class="col-sm-12 col-md-6 px-0 my-auto">
-                    <span class="text-white"><small>Created by: KK Web-Dev</small></span>
+                    <span><small>Created by: KK Web-Dev</small></span>
                 </div>
             </div>
         </footer>

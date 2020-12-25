@@ -5,7 +5,7 @@ $('#contact-button').click(function(e) {
 })
 
 // Navbar active link
-$('#navbarNavDropdown li').click(function(){
-    $('#navbarNavDropdown li').removeClass('active');
-    $(this).addClass('active');
+$('#navbarNavDropdown li a').click(function(){
+    $('#navbarNavDropdown li a').removeClass('selected');
+    $(this).addClass('selected');
 })
