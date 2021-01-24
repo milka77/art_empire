@@ -19,7 +19,7 @@ html {
 body {
   height: 100%;
   width: 100%;
-  background: url(/assets/images/wall-wallpaper-concrete-colored-painted-textured-concept.jpg) no-repeat center fixed;
+  background: url(./assets/images/wall-wallpaper-concrete-colored-painted-textured-concept.jpg) no-repeat center fixed;
   background-color: #1c3c53;
   background-blend-mode: overlay;
   font-family: 'Roboto', sans-serif;
