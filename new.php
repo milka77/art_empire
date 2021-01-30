@@ -246,7 +246,7 @@
           <h5 class="text-uppercase text-center">Contact us</h5>
 
           <!-- Contact us Form -->
-          <form class="mx-5 mb-2">
+          <form class="mx-5 mb-2" action="" method="POST">
             <div class="form-group">
               <input class="form-control" type="text" name="name" id="name" placeholder="Enter Your Name">
             </div>
@@ -334,3 +334,10 @@
   <script src="assets/js/script.js"></script>
 </body>
 </html>
+
+<?php
+
+if(isset(_POST['submit'])) {
+  echo "Sumbit button pressed!";
+}
+?>
