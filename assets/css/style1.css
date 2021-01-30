@@ -18,12 +18,12 @@ html {
 body {
   height: 100%;
   width: 100%;
-  /*background: url(../../assets/images/wall-wallpaper-concrete-colored-painted-textured-concept.jpg) no-repeat center fixed;
+  background: url(../../assets/images/wall-wallpaper-concrete-colored-painted-textured-concept.jpg) no-repeat center fixed;
   background-color: #1c3c53;
-  background-blend-mode: overlay;*/
-  background: #103355;
+  background-blend-mode: overlay;
+  /*background: #103355;
   background: radial-gradient(circle, #11385c 15%, #103355 100%);
-  font-family: 'Roboto', sans-serif;
+  */font-family: 'Roboto', sans-serif;
   color: #9bcdff;
 }
 
@@ -70,7 +70,7 @@ header {
 }
 
 .right {
-  background: #0a2035;
+  background: #0a2035; /* 0a2035*/
   background: linear-gradient(90deg, #103355  0%, #0f304f 80%);
   border-radius: 15px;
 
