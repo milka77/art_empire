@@ -18,31 +18,27 @@ html {
 body {
   height: 100%;
   width: 100%;
-  background: url(../../assets/images/wall-wallpaper-concrete-colored-painted-textured-concept.jpg) no-repeat center fixed;
-  background-color: #1c3c53;
+  background: url(../../assets/images/blue-bg.png) no-repeat center fixed;
+  background-color: #00000054;
   background-blend-mode: overlay;
   /*background: #103355;
-  background: radial-gradient(circle, #11385c 15%, #103355 100%);
-  */font-family: 'Roboto', sans-serif;
-  color: #9bcdff;
+  background: radial-gradient(circle, #11385c 15%, #103355 100%);*/
+  font-family: 'Roboto', sans-serif;
+  /* color: #9bcdff; */
 }
 
 .container-row {
-  width: 95%;
+  width: 90%;
   margin-right: auto;
   margin-left: auto;
 }
 
 /* --- header --- */
 header {
-  height: 300px;
-  border-bottom: 1px solid #9bcdff;
-  background: url(../images/depositphotos_9762409-stock-photo-happy-little-girl-reading-a.jpg) no-repeat;
-  background-size:cover;
-  background-position: bottom center;
-  background-color: #606161;
-  background-blend-mode:overlay;
-
+  height: 350px;
+  background: url(../images/stock-photo-child-opened-a-magic-book-175520738-2.jpg) no-repeat;
+  background-size: cover;
+  background-position: center bottom;
 }
 
 .frame {
@@ -56,7 +52,7 @@ header {
   width: auto;
   height: auto;
   position: absolute;
-  top: -10%;
+  top: 20%;
   bottom: 0;
   left: 0;
   right: 0;
@@ -65,17 +61,48 @@ header {
 
 .brand-name {
   font-family: 'Charm', cursive;
-  font-size: 4.8rem;
-  color: #3f99fa;
-  text-shadow: 2px 2px 1px  #0a2035;
+  font-size: 6rem;
+  color: #4bc3f3;
+  text-shadow: 3px 3px 2px  #0a2035;
+  padding-top: 3rem;
 }
 
 .right {
-  background: #0a2035; /* 0a2035*/
-  background: linear-gradient(90deg, #103355  0%, #0f304f 80%);
+  /*background: #0a2035; /* 0a2035*/
+  /*background: linear-gradient(90deg, #103355  0%, #0f304f 80%);*/
   border-radius: 15px;
-
+  border: 1px solid #343a40;
+  box-shadow: 2px 2px 2px #343a40;
+  margin-bottom: 2rem;
 }
+
+.right-header {
+  text-align: center;
+  background: rgb(87,187,191);
+  background: linear-gradient(135deg, rgba(87,187,191,1) 10%, rgba(102,180,226,1) 35%, rgba(102,180,226,1) 65%, rgba(87,187,191,1) 90%);
+  padding: 5px 0;
+  border-radius: 10px;
+  text-shadow: 2px 2px 2px #0a2035;
+  box-shadow: 2px 2px 2px #343a40;
+  color: #fafafa;
+}
+
+.image {
+  width: 90%;
+  height: auto;
+}
+
+.wrapper {
+  width: 75%;
+  border: 1px solid #091b2c;
+  box-shadow: 2px 2px 2px #343a40;
+  /* background: #091b2c; */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 13px 0px;
+  border-radius: 10px;
+}
+
 
 /* --- Navigation --- */
 #nav {
@@ -126,7 +153,7 @@ header {
 .divider-img {
   margin-right: auto;
   margin-left: auto;
-  width: 90%;
+  width: 70%;
   max-height: 1px;
 }
 
@@ -141,18 +168,10 @@ header {
   padding-right: 3px;
 }
 
-
-/* --- Logo image --- */
-
-img.center {
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
 /* --- About Us --- */
 #about-us {
   margin-bottom: 6rem;
+  
 }
 .about-us-list {
   padding-left: 1.5rem;
@@ -165,38 +184,42 @@ img.center {
 
 /* --- Our Books --- */
 .our-books {
-  background: #076dcc;
-  background: linear-gradient(90deg, #1e568f  0%, #063664 80%);
+  /* background: #ffffff70; */
+  /*background: linear-gradient(90deg, #1e568f  0%, #063664 80%); */
   /*border-top-left-radius: 15px;
   border-top-right-radius: 15px;*/
+  box-shadow: 2px 1px 0 #343a40;
+  border-top: 1px solid #343a40;
+  border-bottom: 1px solid #343a40;
   border-radius: 15px;
 }
 
 .our-books-img,
 .coming-soon-img {
   padding-bottom: 20px;
+  
 }
 
 /* --- Footer --- */
 .footer {
   min-height: 350px;
-  background-color: #1e1f1f;
-  color: rgb(160, 160, 160);
+  background-color: #57bbbf; /*41c3d8*/
+
 }
 
 .footer h4,
 .footer h5 {
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .form-control {
-  background-color: #272727 !important;
-  border: 1px solid #6b6b6b !important;
-  color: #fafafa !important;
+  background-color: transparent !important;
+  border: 1px solid #343a40 !important;
+  color: #343a40 !important;
 }
 
 .form-control::placeholder {
-  color: rgb(160, 160, 160);
+  color: #343a40;
 }
 
 .connect,
@@ -222,7 +245,7 @@ img.center {
 .connect-list a,
 .site-links-list a {
   text-decoration: none;
-  color:  rgb(160, 160, 160);
+  color: #000;
 }
 
 .connect-list a:hover,
