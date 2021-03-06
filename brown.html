@@ -15,11 +15,13 @@
 <body>
 
   <!-- Header -->
-  <header>
+  <header id="header">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-12 text-center brand-wrap">
-            <p class="brand-name">Art Empire Publishing</p>
+        <div class="col-12 text-center brand-wrap ">
+          <img class="logo" src="assets/images/art-logo.png">
+          <img class="banner" src="assets/images/banner.png">
+          <p class="brand-name">Art Empire<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Publishing</p>
         </div>
       </div>
     </div>
@@ -32,16 +34,10 @@
       
 
       <div class="row  mb-3 mr-1">
-        <div class="col-3 left">
+        <div class="col-sm-12 col-md-3 left">
           
-          <div class="mt-5 mr-4 ml-4">
-            <div class="wrapper">
-              <img class="image" src="assets/images/art-logo.png" alt="">
-            </div>
-          </div>
-
-          <!-- Navigation -->
-          <div class="mt-6">
+          <!-- Desktop Navigation -->
+          <div class="mt-6 desktop-nav">
             <nav id="nav">           
               <a class="nav-btn nav-link pl-4" href="#"></i>Home</a>
               <a class="nav-btn nav-link pl-4" href="#about-us">About Us</a>
@@ -50,18 +46,34 @@
               <a class="nav-btn nav-link pl-4" href="#contact-us">Contact Us</a>
             </nav>
           </div>
-          <!-- End of Navigation -->
+          <!-- End of Desktop Navigation -->
+
+          <!-- Mobile Navigation-->
+          <div class="mobile-nav d-lg-none">
+            <a class="" href="#"></i>Home</a>
+            <a class="" href="#about-us">About Us</a>
+            <a class="" href="#our-books">Our Books</a>
+            <a class="" href="#coming-soon">Coming Soon</a>
+            <a class="" href="#contact-us">Contact Us</a>
+          </div>
+          <!-- End of Mobile Navigation-->
+
+          <hr class="divider-line">
 
           <!-- Direct Contact -->
-          <div id="direct-contact" class="contact mt-6  text-center">
+          <div id="direct-contact" class="contact mt-5  text-center">
             <h4 class="text-center header-shadow">Direct Contact</h4>
-            <p><i class="fas fa-envelope"></i> artempirepublishing@gmail.com</p>
-            <p><i class="fas fa-phone mb-3"></i> 0123548784</p>
+            <p><i class="fas fa-envelope mb-3"></i> artempirepublishing@gmail.com</p>
+            <p class="mb-0"><i class="fas fa-mobile-alt"></i> 0123548784</p>
+            <small>Text only please!</small><br>
+            <small>We get back to you in max. 2 hours.</small>
           </div>
           <!-- End of Direct Contact -->
           
+          <hr class="divider-line">
+
           <!-- Random Our Books -->
-          <div class="text-center mt-6">
+          <div class="text-center mt-5">
             <h4 class="mb-4 header-shadow">Our Books Sample</h4>
             <a href="" target="_blank" id="random-our-books-link">
               <img class="random-img" id="random-our-books-img" src="" alt="Random Book Cover" height="auto" width="60%">
@@ -69,8 +81,10 @@
           </div>
           <!-- End of Random Our Books -->
 
+          <hr class="divider-line">
+
           <!-- Random Coming Soon -->
-          <div class="text-center mt-6">
+          <div class="text-center mt-5">
             <h4 class="mb-4 header-shadow">Coming Soon Sample</h4>
             <a href="" target="_blank" id="random-coming-soon-link">
               <img class="random-img" id="random-coming-soon-img" src="" alt="Random Book Cover" height="auto" width="60%">
@@ -81,22 +95,24 @@
         </div>
 
         <!-- Right side Content -->
-        <div class="col-9 right">
+        <div class="col-sm-12 col-md-9 right">
 
           <!-- About Us -->
           <div class="container-row mt-5" id="about-us">
-            <h3 class="text-center header-shadow mt-4 mb-5">About Us</h3>
+            <h3 class="text-center header-shadow mt-4">About Us</h3>
+            
             <!-- Divider -->
-            <div class="divider mt-3 mb-3 text-center"></div>
+            <hr class="divider-line-right">
 
             <p class="text-justify">
               Our company places great emphasis on making products that meet changing market trends, customer (typically parent) expectations, and primarily the needs of children.
               We strive to ensure that the content of our books represents both the modern and authentic fairy-tale world because the rising generations must evolve in time, but they also need to know about the wonderful storytelling of their predecessors. These stories gave the young adult an aid and guidance for the independent life ahead of them. It was a moral guide that can still serve as a benchmark for learning and maintaining the correct values.
             </p>
 
-            <h4 class="text-center header-shadow mt-5 mb-5">Childrens and Books</h4>
+            <h4 class="text-center header-shadow mt-5 mb-4">Childrens and Books</h4>
+
             <!-- Divider -->
-            <div class="divider mt-3 mb-3 text-center"></div>
+            <hr class="divider-line-right">
 
             <div class="row">
               <div class="col-6 text-justify">
@@ -108,9 +124,10 @@
               </div>
             </div>
 
-            <h4 class="text-center header-shadow mt-5 mb-5">About Our Books</h4>
+            <h4 class="text-center header-shadow mt-5 mb-4">About Our Books</h4>
+            
             <!-- Divider -->
-            <div class="divider mt-3 mb-3 text-center"></div>
+            <hr class="divider-line-right">
 
             <p>
               The goods offered by us have been subjected to international official safety checks. The materials used in the process like the paper, offset mixture inks and the used hotmelt adhesive are all subject of testing.
@@ -130,9 +147,10 @@
           <div class="row our-books" id="our-books">
 
             <div class="container-row">
-              <h3 class="text-center our-books-shadow mt-5 mb-5">Our Books</h3>
+              <h3 class="text-center our-books-shadow mt-5 mb-4">Our Books</h3>
+              
               <!-- Divider -->
-              <div class="divider text-center"></div>
+              <hr class="divider-line-right">
 
               <p class="text-center">For a short presentation simple click on the book cover.</p>
 
@@ -201,6 +219,8 @@
               <h3 class="text-center header-shadow mt-5 mb-5">Coming Soon</h3>
               <!-- Divider -->
               <div class="divider mt-3 mb-2 text-center"></div>
+              <!-- Divider -->
+              <hr class="divider-line-right">
 
               <p class="text-center">For a more detailed picture click on the selected book cover.</p>
 

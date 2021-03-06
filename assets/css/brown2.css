@@ -41,12 +41,6 @@ header {
   height: 350px;
   border-bottom: 1px solid #aba072;
   background: linear-gradient(135deg, #61331e 15%, #492214 25%, #492214 80%, #61331e 100%);
-
-  /* background: #773a20; */
-  /* background: url(../images/banner.png) no-repeat;
-  background-size: cover;
-  background-position: center top;
-  z-index: 10; */
 }
 
 .brand-wrap {
@@ -65,7 +59,7 @@ header {
 .logo {
   position: absolute;
   top: 0;
-  left: 4%;
+  left: 2%;
   height: 280px;
   padding-top: 2%;
 }
@@ -106,6 +100,7 @@ header {
   margin-top: 2.5rem;
   margin-bottom: 1.9rem;
 }
+
 /* --- Navigation --- */
 #nav {
   margin-top: 20px;
@@ -162,6 +157,10 @@ header {
   padding-right: 3px;
 }
 
+.contact small {
+  color: #c0b5b0;
+}
+
 .random-img {
   box-shadow: 3px 3px 3px #f8ad91a9;
 }
@@ -216,7 +215,7 @@ header {
 /* --- Footer --- */
 .footer {
   min-height: 350px;
-  background-color: #4b2121;
+  background-color: #33121A;
   color: rgb(230 192 154);
 }
 

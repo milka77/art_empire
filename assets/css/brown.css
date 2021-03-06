@@ -41,24 +41,41 @@ body {
 /* --- header --- */
 header {
   height: 350px;
-  background: url(../images/stock-photo-child-opened-a-magic-book-175520738-2.jpg) no-repeat;
-  background-size: cover;
-  background-position: center bottom;
+  border-bottom: 1px solid #aba072;
+  /* background: linear-gradient(135deg, #91573c 15%, #7a4532 25%, #7a4532 80%, #91573c 100%); */
 }
 
 .brand-wrap {
-  display: relative;
+  position: relative;
+  z-index: 3;
+}
+
+.banner {
+  position: absolute;
+  width: auto;
+  height: 400px;
+  top: 0;
+  left: 25%;
+}
+
+.logo {
+  position: absolute;
+  top: 0;
+  left: 2%;
+  height: 280px;
+  padding-top: 2%;
 }
 
 .brand-name {
   font-family: 'Charm', cursive;
-  display: absolute;
-  top: 70%;
-  transform: translateY(70%);
+  position: absolute;
+  top: 0;
+  right: 5%;
   font-size: 5.6rem;
-  color: #0a1e3b;
-  text-shadow: 4px 4px 4px #a1bb89;
+  color: #aba072;
+  text-shadow: 4px 4px 4px #8e343e;
   margin: 0;
+  padding-top: 2rem;
 }
 
 .right {
@@ -71,17 +88,19 @@ header {
   text-shadow: 2px 2px 2px #996044;
 }
 
-.image {
-  width: 100%;
-  height: auto;
+.divider-line {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(63, 61, 54, 0.75), rgba(0, 0, 0, 0));
+  margin-top: 4rem;
 }
 
-.wrapper {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 13px 0px;
-  border-radius: 10px;
+.divider-line-right {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(63, 61, 54, 0.75), rgba(0, 0, 0, 0));
+  margin-top: 2.5rem;
+  margin-bottom: 1.9rem;
 }
 
 
@@ -101,13 +120,11 @@ header {
 .nav-btn {
   padding: .7rem;
   display: block;
-  /*border: 1px solid #042b54;*/
   width: 15rem;
   border-radius: 10px;
   margin-right: auto;
   margin-left: auto;
   cursor: pointer;
-  background: #0a2035;
   font-size: 15px;
   box-shadow: 3px 3px 3px #3f4241
 }
@@ -254,4 +271,24 @@ header {
   background-color: rgb(230 192 154);
 }
 
-/*#35d7f5*/
+@media only screen and (max-width: 600px) {
+
+  #header,
+  .desktop-nav {
+    display: none;
+  }
+
+  .container-main {
+    width: 100%;
+  }
+  
+  .mobile-nav {
+    width: 100%;
+    background-color: #5d3535;
+  }
+
+  .mobile-nav a {
+    display: block;
+    text-align: center;
+  }
+}
