@@ -218,6 +218,11 @@ header {
   min-height: 350px;
   background-color: #5d3535;
   color: rgb(230 192 154);
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
 }
 
 .footer h4,
@@ -297,12 +302,22 @@ header {
     display: none;
   }
 
+  .row {
+    display: block !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
   #header {
     border: none;
     height: auto;
   }
 
   .container-main {
+    width: 100%;
+  }
+
+  .container-row {
     width: 100%;
   }
   
@@ -378,7 +393,6 @@ header {
   .right {
     border: none;
     box-shadow: none;
-    padding-right: 0;
   }
 
   .text-second {
