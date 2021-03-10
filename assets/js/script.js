@@ -7,7 +7,7 @@ $('#nav a').click(function(){
 
 // For the new design 
 // Display contact information
-$('#v-pills-direct-contact-tab').click(function(e) {
+$('#v-pills-direct-contact-tab').click(function() {
     $('#direct-contact').toggleClass('hide-contact');
     $('#direct-contact').toggleClass('show-contact');
 })
@@ -52,3 +52,13 @@ let randomComingSoon = comingSoonArray[Math.floor(Math.random()*comingSoonArray.
 
 $('#random-coming-soon-link').attr("href", randomComingSoon);
 $('#random-coming-soon-img').attr("src", randomComingSoon);
+
+// Mobile menu
+$('#btnHamburger').click(function(e) {
+    $('#mobile-nav').toggleClass('mobile-nav-show');
+    $('.bars').toggleClass('bg-dark-brown');
+    $('.bars').toggleClass('bg-light-brown');
+})
+
+
+
