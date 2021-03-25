@@ -13,24 +13,32 @@
   <title>ART Empire Publishing</title>
 </head>
 <body>
-  <!-- Mobile Navigation hidden on desktop -->
-  <div id="btnHamburger" class="hamburger-wrap">
-    <a href="#" class="hamburger-btn">
-      <span class="bars bg-dark-brown"></span>
-      <span class="bars bg-dark-brown"></span>
-      <span class="bars bg-dark-brown"></span>
-    </a>
-  </div>
-
-  <div id="mobile-nav" class="mobile-nav col-md-12">
-    <a class="mobile-nav-btn" href="#"></i>Home</a>
-    <a class="mobile-nav-btn" href="#about-us">About Us</a>
-    <a class="mobile-nav-btn" href="#our-books">Our Books</a>
-    <a class="mobile-nav-btn" href="#coming-soon">Coming Soon</a>
-    <a class="mobile-nav-btn" href="#contact-us">Contact Us</a>
-  </div>
-  <!-- End of Mobile Navigation-->
-
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top top-nav-bg" id="topnav">
+    <a class="navbar-brand font-charm" href="brown.html">Art Empire Publishing</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-md-center" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item ">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about-us">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#our-books">Our Books</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#coming-soon">Coming Soon</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact-us">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+ 
   <!-- Back to the top button -->
   <button onclick="backToTop()" id="backToTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
   <!-- End of Back to the top button -->
@@ -43,7 +51,6 @@
           <img class="logo" src="assets/images/art-logo.png">
           <img class="banner" src="assets/images/banner.png">
           <p class="brand-name">Art Empire<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Publishing</p>
-          <p class="brand-name-mobile">Art Empire Publishing</p>
         </div>
       </div>
     </div>
@@ -60,11 +67,11 @@
           <!-- Desktop Navigation -->
           <div class="mt-6 desktop-nav">
             <nav id="nav">           
-              <a class="nav-btn nav-link pl-4" href="#"></i>Home</a>
-              <a class="nav-btn nav-link pl-4" href="#about-us">About Us</a>
-              <a class="nav-btn nav-link pl-4" href="#our-books">Our Books</a>
-              <a class="nav-btn nav-link pl-4" href="#coming-soon">Coming Soon</a>
-              <a class="nav-btn nav-link pl-4" href="#contact-us">Contact Us</a>
+              <a class="nav-btn-side nav-link-side pl-4" href="#"></i>Home</a>
+              <a class="nav-btn-side nav-link-side pl-4" href="#about-us">About Us</a>
+              <a class="nav-btn-side nav-link-side pl-4" href="#our-books">Our Books</a>
+              <a class="nav-btn-side nav-link-side pl-4" href="#coming-soon">Coming Soon</a>
+              <a class="nav-btn-side nav-link-side pl-4" href="#contact-us">Contact Us</a>
             </nav>
           </div>
           <!-- End of Desktop Navigation -->
@@ -98,7 +105,7 @@
           <!-- End of Random Our Books -->
 
           <hr class="divider-line">
-
+          
           <!-- Random Coming Soon -->
           <div class="text-center mt-5 mb-5">
             <h4 class="mb-4 header-shadow">Coming Soon Sample</h4>
@@ -107,6 +114,10 @@
             </a>
           </div>
           <!-- End of Random Coming Soon -->
+          
+          <hr class="divider-line">
+          
+          <!-- -->
 
         </div>
 

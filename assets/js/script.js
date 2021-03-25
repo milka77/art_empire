@@ -61,17 +61,20 @@ $('#btnHamburger').click(function(e) {
 })
 
 // Back to the top function
-let backToTopBtn = document.getElementById('backToTopBtn');
+const backToTopBtn = document.getElementById('backToTopBtn');
+const topNav = document.getElementById("topnav");
 
-// When the user scrolls down 20px from the top, show the button
+// When the user scrolls down 500px from the top, show the topvan and the back to top button
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        backToTopBtn.style.display = "block";
-    
+    if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+        backToTopBtn.style.right = "30px";
+        topNav.style.top = "0";
+
     } else {
-        backToTopBtn.style.display = "none";
+        backToTopBtn.style.right = "-60px";
+        topNav.style.top = "-60px";
     }
 }
 
