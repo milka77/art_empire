@@ -19,33 +19,56 @@ let currentYear = year.getFullYear();
 
 $('#year').text(currentYear);
 
+//Random video presentation
+const ourBooksVideos = [
+    "https://youtube.com/embed/2-BN4jzWMuA",
+    "https://www.youtube.com/embed/In5t6EU9234",
+    "https://youtube.com/embed/_A_a29GuG3E",
+    "https://youtube.com/embed/lG0HYFem_Os",
+    "https://youtube.com/embed/zUPFKjUkNRU",
+    "https://youtube.com/embed/KRuWjf0blEE"
+];
+
+let randomVideo = ourBooksVideos[Math.floor(Math.random()*ourBooksVideos.length)];
+
+
 //Random picture Our Books
 const ourBooksArray = [
-    "assets/images/comming-soon/at_the_zoo.jpg",
-    "assets/images/comming-soon/farm.jpg",
-    "assets/images/comming-soon/find_10_hidden_objects.jpg",
-    "assets/images/comming-soon/my_village.jpg",
-    "assets/images/comming-soon/numbers.jpg",
-    "assets/images/comming-soon/professions.jpg",
-    "assets/images/comming-soon/rhymes.jpg",
-    "assets/images/comming-soon/work_machines.jpg"
+    "assets/images/books_clear1.png",
+    "assets/images/books_clear2.png",
+    "assets/images/books_clear3.png",
+    "assets/images/books_clear4.png"
 ];
 
 let randomBooks = ourBooksArray[Math.floor(Math.random()*ourBooksArray.length)];
 
-$('#random-our-books-link').attr("href", randomBooks);
-$('#random-our-books-img').attr("src", randomBooks);
+if(randomBooks == "assets/images/books_clear1.png") {
+    $('#random-our-books-link').attr("href", "assets/images/books1.jpg");
+    $('#random-our-books-img').attr("src", randomBooks);
+
+} else if (randomBooks == "assets/images/books_clear2.png") {
+    $('#random-our-books-link').attr("href", "assets/images/books2.jpg");
+    $('#random-our-books-img').attr("src", randomBooks);
+
+} else if (randomBooks == "assets/images/books_clear3.png") {
+    $('#random-our-books-link').attr("href", "assets/images/books3.jpg");
+    $('#random-our-books-img').attr("src", randomBooks);
+
+} else {
+    $('#random-our-books-link').attr("href", "assets/images/books4.jpg");
+    $('#random-our-books-img').attr("src", randomBooks);
+}
 
 // Random pictire Coming Soon
 const comingSoonArray = [
-    "assets/images/comming-soon/at_the_zoo.jpg",
-    "assets/images/comming-soon/farm.jpg",
-    "assets/images/comming-soon/find_10_hidden_objects.jpg",
-    "assets/images/comming-soon/my_village.jpg",
-    "assets/images/comming-soon/numbers.jpg",
-    "assets/images/comming-soon/professions.jpg",
-    "assets/images/comming-soon/rhymes.jpg",
-    "assets/images/comming-soon/work_machines.jpg"
+    "assets/images/coming-soon/at_the_zoo.jpg",
+    "assets/images/coming-soon/farm.jpg",
+    "assets/images/coming-soon/find_10_hidden_objects.jpg",
+    "assets/images/coming-soon/my_village.jpg",
+    "assets/images/coming-soon/numbers.jpg",
+    "assets/images/coming-soon/professions.jpg",
+    "assets/images/coming-soon/rhymes.jpg",
+    "assets/images/coming-soon/work_machines.jpg"
 ];
 
 let randomComingSoon = comingSoonArray[Math.floor(Math.random()*comingSoonArray.length)];
