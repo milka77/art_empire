@@ -582,7 +582,7 @@ header {
   }
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 370px) {
   .brand-name-mobile {
     font-size: 4rem;
   }
