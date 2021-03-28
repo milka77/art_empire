@@ -5,13 +5,10 @@ $('#nav a').click(function(){
     $(this).addClass('active');
 })
 
-// For the new design 
-// Display contact information
-$('#v-pills-direct-contact-tab').click(function() {
-    $('#direct-contact').toggleClass('hide-contact');
-    $('#direct-contact').toggleClass('show-contact');
+$('#topnav a').click(function(){
+    $('#topnav a').removeClass('active');
+    $(this).addClass('active');
 })
-
 
 //Curent Year For Footer
 let year = new Date();
