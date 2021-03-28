@@ -482,6 +482,10 @@ header {
     padding-top: 25px;
   }
 
+  .brand-name-mobile {
+    font-size: 4rem;
+  }
+
   .row {
     display: block !important;
     margin-left: 0 !important;
@@ -579,11 +583,5 @@ header {
   #backToTopBtn {
     right: 15px;
     bottom: 15px;
-  }
-}
-
-@media only screen and (max-width: 370px) {
-  .brand-name-mobile {
-    font-size: 4rem;
   }
 }
