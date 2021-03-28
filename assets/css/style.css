@@ -100,6 +100,10 @@ header {
   padding-top: 2rem;
 }
 
+.brand-name-mobile {
+  display: none;
+}
+
 .font-charm {
   font-family: 'Charm', cursive;
   font-size: 180%;
@@ -195,7 +199,7 @@ header {
   border-radius: .5rem !important;
   background: rgb(115,48,60);
   background: linear-gradient(90deg, rgba(115,48,60,0.75) 15%, rgba(115,48,60,0.75) 35%, rgba(167,59,78,0.75) 85%, rgb(167 59 78 / 75%) 100%) !important;
-  color: #fafafa !important;  
+  color: #fafafa !important;
   text-shadow: 2px 2px 2px #070707;
 }
 
@@ -259,16 +263,16 @@ header {
 }
 
 /* from https://embedresponsively.com/ */
-.embed-container { 
-  position: relative; 
+.embed-container {
+  position: relative;
   padding-bottom: 56.25%;
   height: 0;
   overflow: hidden;
   max-width: 100%;
-} 
+}
 
 .embed-container-random {
-  position: relative; 
+  position: relative;
   padding-bottom: 40%;
   height: 0;
   overflow: hidden;
@@ -277,9 +281,9 @@ header {
   margin-left: auto;
 }
 
-.embed-container iframe, 
-.embed-container object, 
-.embed-container embed { 
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
   position: absolute;
   top: 0;
   left: 10%;
@@ -374,7 +378,7 @@ header {
 
 /* --- Tablet landscape view --- */
 @media only screen and (max-width: 1024px) {
-  
+
   .brand-name {
     display: none;
   }
@@ -391,7 +395,7 @@ header {
     height: 220px;
     top: 30px;
   }
-  
+
   #header {
     height: 330px;
   }
@@ -403,8 +407,8 @@ header {
     width: 80%;
   }
 
-  .embed-container iframe, 
-  .embed-container object, 
+  .embed-container iframe,
+  .embed-container object,
   .embed-container embed {
     width: 100%;
     height: 100%;
@@ -422,13 +426,21 @@ header {
 
 /* --- Tablet portait view --- */
 @media only screen and (max-width: 900px) {
-  
+
   .container-main {
     width: 95%;
   }
 
+  body {
+    padding-top: 55px;
+  }
+
   .desktop-nav {
     display: none;
+  }
+
+  #topnav {
+    top: 0 !important;
   }
 
   #header {
@@ -461,14 +473,24 @@ header {
 
   .logo,
   .banner,
-  .brand-name {
+  .brand-name,
+  .font-charm {
     display: none;
   }
-  
+
+  body {
+    padding-top: 25px;
+  }
+
   .row {
     display: block !important;
     margin-left: 0 !important;
     margin-right: 0 !important;
+  }
+
+  .top-nav-bg {
+    background: rgba(115, 48, 60, 0.712);
+    background: linear-gradient(90deg, rgba(134, 75, 74, 0.95) 10%, rgba(144, 85, 85, 0.95) 25%, rgba(157, 88, 90, 0.95) 60%, rgba(173, 91, 95, 0.95) 85%, rgba(184, 94, 99, 0.95) 100%) !important;
   }
 
   #header {
@@ -483,7 +505,7 @@ header {
   .container-row {
     width: 100%;
   }
-  
+
   .brand-name-mobile {
     display: block;
     text-align: center;
@@ -493,7 +515,7 @@ header {
     text-shadow: 4px 4px 4px #8e343e;
     margin: 0;
     padding-top: 2.5rem;
-  }  
+  }
 
   .left {
     width: 100%;
@@ -528,6 +550,10 @@ header {
     margin-bottom: 2rem;
   }
 
+  #contact-us h5 {
+    margin-bottom: 2rem;
+  }
+
   .form {
     width: 90%;
     margin-left: auto !important;
@@ -544,6 +570,10 @@ header {
 
   .copyright {
     margin-bottom: 30px;
+  }
+
+  .mobile-row {
+    display: block;
   }
 
   #backToTopBtn {
